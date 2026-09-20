@@ -834,18 +834,18 @@
 
       <!-- Comparison Slider Container -->
       <div class="max-w-4xl mx-auto">
-        <div class="relative w-full h-[320px] sm:h-[450px] md:h-[500px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white select-none cursor-ew-resize" id="before-after-container">
+        <div class="relative w-full h-[320px] sm:h-[450px] md:h-[520px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white select-none cursor-ew-resize" id="before-after-container">
           
           <!-- "AFTER" Image (Base layer) -->
-          <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=1200&q=80" alt="New Architectural Shingle Roof After Installation" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" />
+          <img src="roof_after.jpg" alt="Seamless Metal Roof Installation - South Georgia Roofing" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" />
           <div class="absolute bottom-4 right-4 bg-emerald-700/90 text-white font-heading font-bold text-xs px-3 py-1.5 rounded-md shadow-md uppercase tracking-wider pointer-events-none">
-            After: New Architectural Roof
+            After: New Metal Roof
           </div>
 
           <!-- "BEFORE" Image (Clipped layer using clip-path) -->
-          <img src="https://images.unsplash.com/photo-1632759145351-1d592919f522?auto=format&fit=crop&w=1200&q=80" alt="Old Damaged Shingle Roof Before Replacement" id="before-image" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" style="clip-path: inset(0 50% 0 0);" />
-          <div class="absolute bottom-4 left-4 bg-rose-700/90 text-white font-heading font-bold text-xs px-3 py-1.5 rounded-md shadow-md uppercase tracking-wider pointer-events-none">
-            Before: Worn & Leaking
+          <img src="roof_before.jpg" alt="Roof Decking Replacement & Tear-Off - South Georgia Roofing" id="before-image" class="absolute inset-0 w-full h-full object-cover pointer-events-none select-none" style="clip-path: inset(0 50% 0 0);" />
+          <div class="absolute bottom-4 left-4 bg-amber-600/90 text-white font-heading font-bold text-xs px-3 py-1.5 rounded-md shadow-md uppercase tracking-wider pointer-events-none">
+            Before: Decking & Tear-Off
           </div>
 
           <!-- Divider Handle -->
@@ -855,7 +855,7 @@
         <!-- Instructions -->
         <p class="text-center text-xs text-slate-500 mt-4 flex items-center justify-center gap-1 font-medium">
           <i data-lucide="move-horizontal" class="w-4 h-4 text-amber-500"></i>
-          <span>Click & drag the slider or swipe on mobile to compare before and after</span>
+          <span>Click & drag the slider or swipe on mobile to see the real transformation</span>
         </p>
       </div>
 
@@ -883,8 +883,8 @@
       <!-- Filter Buttons -->
       <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
         <button onclick="filterGallery('all')" class="gallery-btn active px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-brand-navy text-white transition-all shadow-md">All Projects</button>
-        <button onclick="filterGallery('shingle')" class="gallery-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Shingle Roofs</button>
         <button onclick="filterGallery('metal')" class="gallery-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Metal Roofing</button>
+        <button onclick="filterGallery('shingle')" class="gallery-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Shingle Roofs</button>
         <button onclick="filterGallery('commercial')" class="gallery-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Commercial / Flat</button>
         <button onclick="filterGallery('remodel')" class="gallery-btn px-4 py-2 rounded-lg text-xs font-bold uppercase tracking-wider bg-slate-100 text-slate-700 hover:bg-slate-200 transition-all">Remodeling & Siding</button>
       </div>
@@ -892,29 +892,29 @@
       <!-- Gallery Grid -->
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="gallery-grid">
         
-        <!-- Project 1: Shingle Roof Replacement -->
-        <div class="gallery-item shingle bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
+        <!-- Project 1: Decking Tear-Off & Repair -->
+        <div class="gallery-item metal bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
           <div class="relative h-60 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1590381105924-c72589b9ef3f?auto=format&fit=crop&w=800&q=80" alt="Architectural Shingle Roof in Valdosta" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
-            <span class="absolute top-3 left-3 bg-brand-navy text-amber-400 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">Shingle Roof</span>
-            <span class="absolute bottom-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">Valdosta, GA</span>
+            <img src="roof_before.jpg" alt="Roof Decking Repair and Tear-Off in South Georgia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <span class="absolute top-3 left-3 bg-brand-navy text-amber-400 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">Tear-Off & Decking</span>
+            <span class="absolute bottom-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lowndes County</span>
           </div>
           <div class="p-5">
-            <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Architectural Shingle Replacement</h4>
-            <p class="text-xs text-slate-600">Full tear-off, replaced 6 sheets of damaged plywood decking, installed new synthetic underlayment and ridge cap vents.</p>
+            <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Decking Replacement & Structural Prep</h4>
+            <p class="text-xs text-slate-600">Complete shingle removal, full inspection and replacement of damaged wood decking, and synthetic barrier prep.</p>
           </div>
         </div>
 
         <!-- Project 2: Metal Standing Seam -->
         <div class="gallery-item metal bg-slate-50 border border-slate-200 rounded-xl overflow-hidden shadow-sm hover:shadow-xl transition-all group">
           <div class="relative h-60 overflow-hidden">
-            <img src="https://images.unsplash.com/photo-1628744448840-55bdb2497bd4?auto=format&fit=crop&w=800&q=80" alt="Standing Seam Metal Roof Installation" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
+            <img src="roof_after.jpg" alt="Finished Standing Seam Metal Roof in South Georgia" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
             <span class="absolute top-3 left-3 bg-brand-navy text-amber-400 text-[11px] font-extrabold uppercase px-2.5 py-1 rounded shadow">Metal Roof</span>
-            <span class="absolute bottom-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">Hahira, GA</span>
+            <span class="absolute bottom-3 right-3 bg-black/70 text-white text-[10px] font-bold px-2 py-0.5 rounded">Lowndes County</span>
           </div>
           <div class="p-5">
             <h4 class="font-heading font-bold text-base text-slate-900 mb-1">Modern Standing Seam Metal</h4>
-            <p class="text-xs text-slate-600">High-gauge 26ga standing seam installation with hidden fasteners for maximum storm resilience and clean aesthetic.</p>
+            <p class="text-xs text-slate-600">High-gauge standing seam metal installation with hidden fasteners for maximum hurricane resilience and energy efficiency.</p>
           </div>
         </div>
 
