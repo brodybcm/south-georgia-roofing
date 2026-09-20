@@ -1687,7 +1687,19 @@
   </div>
 
   <!-- ========================================================================= -->
-  <!-- 17. SUBMISSION CONFIRMATION MODAL -->
+  <!-- 17. FLOATING SCROLL TO TOP BUTTON -->
+  <!-- ========================================================================= -->
+  <button 
+    id="scroll-to-top" 
+    onclick="scrollToTop()" 
+    aria-label="Scroll to top of page" 
+    title="Back to top" 
+    class="fixed z-40 bottom-20 right-4 sm:bottom-6 sm:right-6 w-11 h-11 sm:w-12 sm:h-12 rounded-full bg-brand-navy/95 hover:bg-slate-900 text-amber-400 border-2 border-amber-500/80 hover:border-amber-400 shadow-2xl backdrop-blur-sm transition-all duration-300 transform translate-y-4 opacity-0 pointer-events-none flex items-center justify-center group focus:outline-none focus:ring-2 focus:ring-amber-400 hover:scale-105">
+    <i data-lucide="chevron-up" class="w-6 h-6 group-hover:-translate-y-0.5 transition-transform duration-200"></i>
+  </button>
+
+  <!-- ========================================================================= -->
+  <!-- 18. SUBMISSION CONFIRMATION MODAL -->
   <!-- ========================================================================= -->
   <div id="success-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/75 backdrop-blur-sm hidden">
     <div class="bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full text-center shadow-2xl space-y-4">
@@ -1881,6 +1893,29 @@
 
     function closeModal() {
       document.getElementById('success-modal').classList.add('hidden');
+    }
+
+    // Scroll to Top Floating Button Logic
+    const scrollTopBtn = document.getElementById('scroll-to-top');
+
+    function toggleScrollTopBtn() {
+      if (!scrollTopBtn) return;
+      if (window.scrollY > 350) {
+        scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none', 'translate-y-4');
+        scrollTopBtn.classList.add('opacity-100', 'pointer-events-auto', 'translate-y-0');
+      } else {
+        scrollTopBtn.classList.remove('opacity-100', 'pointer-events-auto', 'translate-y-0');
+        scrollTopBtn.classList.add('opacity-0', 'pointer-events-none', 'translate-y-4');
+      }
+    }
+
+    window.addEventListener('scroll', toggleScrollTopBtn, { passive: true });
+
+    function scrollToTop() {
+      window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
     }
   </script>
 </body>
