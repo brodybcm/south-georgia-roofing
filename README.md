@@ -1,6 +1,6 @@
 # South Georgia Roofing & Remodeling
 
-Official website for **South Georgia Roofing & Remodeling**, locally owned and operated by **Roy Navarro** in **Valdosta, Georgia**.
+Official website for **South Georgia Roofing & Remodeling**, locally owned and operated in **Valdosta, Georgia**.
 
 Serving Lowndes County, Cook County, Brooks County, Thomas County, Tift County, and surrounding South Georgia communities.
 
@@ -22,8 +22,8 @@ Serving Lowndes County, Cook County, Brooks County, Thomas County, Tift County, 
 
 ## 🚀 Key Website Features
 
-- **Mobile-First Conversion Engine**: Designed specifically for smartphone visitors with a sticky bottom action bar (**Call Now**, **Text Roy**, **Free Quote**).
-- **Direct Owner Communication**: Quick click-to-call and click-to-text links to Roy Navarro directly at `(229) 300-9021`.
+- **Mobile-First Conversion Engine**: Designed specifically for smartphone visitors with a sticky bottom action bar (**Call Now**, **Text Us**, **Free Quote**).
+- **Direct Phone Communication**: Quick click-to-call and click-to-text links to our team directly at `(229) 300-9021`.
 - **Interactive Before & After Slider**: Side-by-side comparison slider displaying shingle transformations.
 - **Filterable Project Portfolio**: Filter projects by Shingles, Metal, Commercial, and Remodeling.
 - **Local SEO & Schema Markup**: Integrated `Schema.org/RoofingContractor` JSON-LD microdata for Google Search indexing.
@@ -33,7 +33,7 @@ Serving Lowndes County, Cook County, Brooks County, Thomas County, Tift County, 
 
 ## 📞 Contact Information
 
-- **Owner**: Roy Navarro
+- **Company**: South Georgia Roofing & Remodeling
 - **Direct Phone / Text**: [(229) 300-9021](tel:2293009021)
 - **Headquarters**: Valdosta, GA
 - **Hours**: Monday – Saturday: 7:00 AM – 7:00 PM (24/7 Emergency Storm Dispatch)
